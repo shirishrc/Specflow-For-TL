@@ -1,0 +1,11 @@
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+
+    <_LivingDocRuntimePluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETCoreApp' ">netstandard2.0</_LivingDocRuntimePluginFramework>
+    <_LivingDocRuntimePluginFramework Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">net461</_LivingDocRuntimePluginFramework>
+    <_LivingDocRuntimePluginFilesPath>$(MSBuildThisFileDirectory)\..\lib\$(_LivingDocRuntimePluginFramework)\*.dll</_LivingDocRuntimePluginFilesPath>
+
+  </PropertyGroup>
+
+</Project>
